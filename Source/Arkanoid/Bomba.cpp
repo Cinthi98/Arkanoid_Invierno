@@ -41,7 +41,7 @@ ABomba::ABomba()
 
 		InitialLifeSpan = 5.0f;
 
-
+//Cambios para el examen de invierno
 		//=======================================================
 		//Creamos un Trray de instancias que almacena la cantidad de instancias
 		TArray<AActor*> Instances;
@@ -115,7 +115,7 @@ ABomba::ABomba()
 	void ABomba::TimerExplition()
 	{
 		//
-		GetWorldTimerManager().SetTimer(AcuaticaTimerHandle, this, &ABomba::DestroyBomba, 0.3f, true, 2.0f);//cada cierto tiempo creamos una NaveAcuatica extra en el mapa con el SpawnNave
+		GetWorldTimerManager().SetTimer(BombaTimerHandle, this, &ABomba::DestroyBomba, 0.3f, true, 2.0f);//cada cierto tiempo creamos una NaveAcuatica extra en el mapa con el SpawnNave
 	}
 
 	void ABomba::DestroyBomba()
