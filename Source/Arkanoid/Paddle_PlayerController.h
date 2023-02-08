@@ -22,7 +22,7 @@ public:
 	APaddle_PlayerController();
 
 	UFUNCTION()
-		virtual void SetupInputComponent() override; //Funcion virtual al componente de entrada de configuración
+		virtual void SetupInputComponent() override; //Funcion virtual al componente de entrada de configuraciÃ³n
 
 protected:
 
@@ -71,7 +71,7 @@ public:
 	 void DestroyBall(); //Funcion de destuccion de balls
 
 
-
+//Cambios para el examen de invierno
 
 	 //Funcion que suelta las bombas
 	 void LaunchBombs();
