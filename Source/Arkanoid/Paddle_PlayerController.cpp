@@ -55,7 +55,7 @@ void APaddle_PlayerController::DestroyBall()
 	
 }
 
-
+//Cambios para el examen de invierno
 void APaddle_PlayerController::LaunchBombs()
 {
 	//Casteamos el pawn a un Mypaddle 
@@ -68,7 +68,7 @@ void APaddle_PlayerController::LaunchBombs()
 		{
 			//Si es mayor a 0 se podra disparar 
 			MyBomba = GetWorld()->SpawnActor<ABomba>(UbiPaddle + FVector(0, 0, 30), FRotator(90, 0, 90));
-			//Si la bomba existe en el mundo no se podra reducir el contador y tampoco dispararà
+			//Si la bomba existe en el mundo no se podra reducir el contador y tampoco dispararÃ 
 			if (MyBomba != nullptr)
 			{
 				GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Yellow, FString::Printf(TEXT("Bombas %i"), MyPaddle->GetContador()));
