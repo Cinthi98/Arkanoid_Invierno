@@ -49,10 +49,13 @@ public:
 	FORCEINLINE UProjectileMovementComponent* GetMovement() const { return Movement; } //Obtenemos el movimiento
 
 
+//Cambios para el examen de invierno
 
+//Temporizador para la bomba
 	void TimerExplition();
+//Destrucción de la bomba
 	void DestroyBomba();
-	FTimerHandle AcuaticaTimerHandle;
+	FTimerHandle BombaTimerHandle;
 
 	//===================================================================================================
 	//Puntero a la bomba con el nombre de instance
