@@ -81,9 +81,11 @@ void ABrick::ChangeColor()
 	MaterialInstance->SetVectorParameterValue("RandomColor", FLinearColor(UKismetMathLibrary::RandomFloatInRange(0.0f, 1.00f), UKismetMathLibrary::RandomFloatInRange(0.0f, 1.00f), UKismetMathLibrary::RandomFloatInRange(0.0f, 1.00f)));
 }
 
+//Cambios para el examen de invierno
 
 void ABrick::NotifyActorBeginOverlap(AActor* OtherActor)
 {
+	//Se agregó la condición para que los brick desaparezcan al interactuar con la bomba
 	if (OtherActor->ActorHasTag("Ball") || OtherActor->ActorHasTag("Two") || OtherActor->ActorHasTag("Three") || OtherActor->ActorHasTag("Bomba")) {
 
 		if (BounceSound != nullptr) {
